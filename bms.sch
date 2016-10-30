@@ -51,6 +51,8 @@ F0 "PackA" 60
 F1 "pack.sch" 60
 F2 "isoSPIB+" B R 5800 4200 60 
 F3 "isoSPIB-" B R 5800 4350 60 
+F4 "isoSPIA+" B L 3950 4200 60 
+F5 "isoSPIA-" B L 3950 4350 60 
 $EndSheet
 Wire Wire Line
 	5800 4200 7100 4200
@@ -63,5 +65,7 @@ F0 "PackB" 60
 F1 "pack.sch" 60
 F2 "isoSPIA+" B L 7100 4200 60 
 F3 "isoSPIA-" B L 7100 4350 60 
+F4 "isoSPIB+" B R 8950 4200 60 
+F5 "isoSPIB-" B R 8950 4350 60 
 $EndSheet
 $EndSCHEMATC
