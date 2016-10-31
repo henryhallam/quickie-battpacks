@@ -250,6 +250,7 @@ F2 "Cn" U L 1200 850 60
 F3 "Sn" U L 1200 950 60 
 F4 "Cn-1" I L 1200 1050 60 
 F5 "Cell+" U R 1850 850 60 
+F6 "Cell-" U R 1850 1000 60 
 $EndSheet
 Text HLabel 3200 3900 0    60   BiDi ~ 0
 isoSPIB+
@@ -297,6 +298,8 @@ F1 "cell.sch" 60
 F2 "Cn" U L 1200 1350 60 
 F3 "Sn" U L 1200 1450 60 
 F4 "Cn-1" I L 1200 1550 60 
+F5 "Cell+" U R 1850 1350 60 
+F6 "Cell-" U R 1850 1500 60 
 $EndSheet
 Text Label 1200 1350 2    60   ~ 0
 C11
@@ -312,6 +315,8 @@ F1 "cell.sch" 60
 F2 "Cn" U L 1200 1850 60 
 F3 "Sn" U L 1200 1950 60 
 F4 "Cn-1" I L 1200 2050 60 
+F5 "Cell+" U R 1850 1850 60 
+F6 "Cell-" U R 1850 2000 60 
 $EndSheet
 Text Label 1200 1850 2    60   ~ 0
 C10
@@ -327,6 +332,8 @@ F1 "cell.sch" 60
 F2 "Cn" U L 1200 2350 60 
 F3 "Sn" U L 1200 2450 60 
 F4 "Cn-1" I L 1200 2550 60 
+F5 "Cell+" U R 1850 2350 60 
+F6 "Cell-" U R 1850 2500 60 
 $EndSheet
 Text Label 1200 2350 2    60   ~ 0
 C9
@@ -342,6 +349,8 @@ F1 "cell.sch" 60
 F2 "Cn" U L 1200 2850 60 
 F3 "Sn" U L 1200 2950 60 
 F4 "Cn-1" I L 1200 3050 60 
+F5 "Cell+" U R 1850 2850 60 
+F6 "Cell-" U R 1850 3000 60 
 $EndSheet
 Text Label 1200 2850 2    60   ~ 0
 C8
@@ -357,6 +366,8 @@ F1 "cell.sch" 60
 F2 "Cn" U L 1200 3350 60 
 F3 "Sn" U L 1200 3450 60 
 F4 "Cn-1" I L 1200 3550 60 
+F5 "Cell+" U R 1850 3350 60 
+F6 "Cell-" U R 1850 3500 60 
 $EndSheet
 Text Label 1200 3350 2    60   ~ 0
 C7
@@ -372,6 +383,8 @@ F1 "cell.sch" 60
 F2 "Cn" U L 1200 3850 60 
 F3 "Sn" U L 1200 3950 60 
 F4 "Cn-1" I L 1200 4050 60 
+F5 "Cell+" U R 1850 3850 60 
+F6 "Cell-" U R 1850 4000 60 
 $EndSheet
 Text Label 1200 3850 2    60   ~ 0
 C6
@@ -387,6 +400,8 @@ F1 "cell.sch" 60
 F2 "Cn" U L 1200 4350 60 
 F3 "Sn" U L 1200 4450 60 
 F4 "Cn-1" I L 1200 4550 60 
+F5 "Cell+" U R 1850 4400 60 
+F6 "Cell-" U R 1850 4500 60 
 $EndSheet
 Text Label 1200 4350 2    60   ~ 0
 C5
@@ -402,6 +417,8 @@ F1 "cell.sch" 60
 F2 "Cn" U L 1200 4850 60 
 F3 "Sn" U L 1200 4950 60 
 F4 "Cn-1" I L 1200 5050 60 
+F5 "Cell+" U R 1850 4850 60 
+F6 "Cell-" U R 1850 5000 60 
 $EndSheet
 Text Label 1200 4850 2    60   ~ 0
 C4
@@ -417,6 +434,8 @@ F1 "cell.sch" 60
 F2 "Cn" U L 1200 5350 60 
 F3 "Sn" U L 1200 5450 60 
 F4 "Cn-1" I L 1200 5550 60 
+F5 "Cell+" U R 1850 5350 60 
+F6 "Cell-" U R 1850 5500 60 
 $EndSheet
 Text Label 1200 5350 2    60   ~ 0
 C3
@@ -432,6 +451,8 @@ F1 "cell.sch" 60
 F2 "Cn" U L 1200 5850 60 
 F3 "Sn" U L 1200 5950 60 
 F4 "Cn-1" I L 1200 6050 60 
+F5 "Cell+" U R 1850 5900 60 
+F6 "Cell-" U R 1850 6000 60 
 $EndSheet
 Text Label 1200 5850 2    60   ~ 0
 C2
@@ -448,6 +469,7 @@ F2 "Cn" U L 1200 6350 60
 F3 "Sn" U L 1200 6450 60 
 F4 "Cn-1" I L 1200 6550 60 
 F5 "Cell-" U R 1850 6500 60 
+F6 "Cell+" U R 1850 6400 60 
 $EndSheet
 Text Label 1200 6350 2    60   ~ 0
 C1
@@ -995,7 +1017,7 @@ Wire Wire Line
 Wire Wire Line
 	1100 6550 1200 6550
 Wire Wire Line
-	1600 6850 1950 6850
+	1600 6850 2100 6850
 Wire Wire Line
 	1950 6850 1950 6500
 Wire Wire Line
@@ -1046,8 +1068,8 @@ L PWR_FLAG #FLG01
 U 1 1 581CEF1E
 P 5800 2050
 AR Path="/5815CFB2/581CEF1E" Ref="#FLG01"  Part="1" 
-AR Path="/5815DB69/581CEF1E" Ref="#FLG026"  Part="1" 
-F 0 "#FLG01" H 5800 2145 50  0001 C CNN
+AR Path="/5815DB69/581CEF1E" Ref="#FLG015"  Part="1" 
+F 0 "#FLG015" H 5800 2145 50  0001 C CNN
 F 1 "PWR_FLAG" H 5800 2230 50  0000 C CNN
 F 2 "" H 5800 2050 50  0000 C CNN
 F 3 "" H 5800 2050 50  0000 C CNN
@@ -1057,4 +1079,84 @@ $EndComp
 Connection ~ 1950 6650
 NoConn ~ 3600 4500
 NoConn ~ 3600 4850
+Wire Wire Line
+	1850 6400 1950 6400
+Wire Wire Line
+	1950 6400 1950 6000
+Wire Wire Line
+	1950 6000 1850 6000
+Wire Wire Line
+	1850 5900 1950 5900
+Wire Wire Line
+	1950 5900 1950 5500
+Wire Wire Line
+	1950 5500 1850 5500
+Wire Wire Line
+	1850 5350 1950 5350
+Wire Wire Line
+	1950 5350 1950 5000
+Wire Wire Line
+	1950 5000 1850 5000
+Wire Wire Line
+	1850 4850 1950 4850
+Wire Wire Line
+	1950 4850 1950 4500
+Wire Wire Line
+	1950 4500 1850 4500
+Wire Wire Line
+	1850 4400 1950 4400
+Wire Wire Line
+	1950 4400 1950 4000
+Wire Wire Line
+	1950 4000 1850 4000
+Wire Wire Line
+	1850 3850 1950 3850
+Wire Wire Line
+	1950 3850 1950 3500
+Wire Wire Line
+	1950 3500 1850 3500
+Wire Wire Line
+	1850 3350 1950 3350
+Wire Wire Line
+	1950 3350 1950 3000
+Wire Wire Line
+	1950 3000 1850 3000
+Wire Wire Line
+	1850 2850 1950 2850
+Wire Wire Line
+	1950 2850 1950 2500
+Wire Wire Line
+	1950 2500 1850 2500
+Wire Wire Line
+	1850 2350 1950 2350
+Wire Wire Line
+	1950 2350 1950 2000
+Wire Wire Line
+	1950 2000 1850 2000
+Wire Wire Line
+	1850 1850 1950 1850
+Wire Wire Line
+	1950 1850 1950 1500
+Wire Wire Line
+	1950 1500 1850 1500
+Wire Wire Line
+	1850 1350 1950 1350
+Wire Wire Line
+	1950 1350 1950 1000
+Wire Wire Line
+	1950 1000 1850 1000
+$Comp
+L PWR_FLAG #FLG02
+U 1 1 581ED3C3
+P 2100 6850
+AR Path="/5815CFB2/581ED3C3" Ref="#FLG02"  Part="1" 
+AR Path="/5815DB69/581ED3C3" Ref="#FLG016"  Part="1" 
+F 0 "#FLG016" H 2100 6945 50  0001 C CNN
+F 1 "PWR_FLAG" H 2100 7030 50  0000 C CNN
+F 2 "" H 2100 6850 50  0000 C CNN
+F 3 "" H 2100 6850 50  0000 C CNN
+	1    2100 6850
+	-1   0    0    1   
+$EndComp
+Connection ~ 1950 6850
 $EndSCHEMATC
