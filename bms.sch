@@ -55,9 +55,9 @@ F4 "isoSPIA+" B L 3950 5950 60
 F5 "isoSPIA-" B L 3950 6100 60 
 $EndSheet
 Wire Wire Line
-	5800 4200 6800 4200
+	3950 4200 2950 4200
 Wire Wire Line
-	6800 4350 5800 4350
+	2950 4350 3950 4350
 $Sheet
 S 3950 3800 1850 1100
 U 5815DB69
@@ -68,16 +68,16 @@ F3 "isoSPIA-" B L 3950 4350 60
 F4 "isoSPIB+" B R 5800 4200 60 
 F5 "isoSPIB-" B R 5800 4350 60 
 $EndSheet
-Text Label 6800 4200 2    60   ~ 0
+Text Label 2950 4200 0    60   ~ 0
 isoSPI_P2P_+
-Text Label 6800 4350 2    60   ~ 0
+Text Label 2950 4350 0    60   ~ 0
 isoSPI_P2P_-
 Wire Wire Line
-	3950 5950 2950 5950
+	5800 5950 6800 5950
 Wire Wire Line
-	2950 6100 3950 6100
-Text Label 2950 5950 0    60   ~ 0
+	6800 6100 5800 6100
+Text Label 6800 5950 2    60   ~ 0
 isoSPI_P2P_+
-Text Label 2950 6100 0    60   ~ 0
+Text Label 6800 6100 2    60   ~ 0
 isoSPI_P2P_-
 $EndSCHEMATC
