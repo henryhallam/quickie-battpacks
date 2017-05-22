@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Relay-SPNO
+D Relay with SP-NO contacts
+K relay
+$ENDCMP
+#
+#End Doc Library

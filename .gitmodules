@@ -1,0 +1,9 @@
+[submodule "headnode/lib/pkl"]
+	path = headnode/lib/pkl
+	url = https://github.com/esden/pretty-kicad-libs.git
+[submodule "headnode/lib/stm32-kicad-lib"]
+	path = headnode/lib/stm32-kicad-lib
+	url = https://github.com/esden/stm32-kicad-lib.git
+[submodule "headnode/lib/1bitsy-hardware-lib"]
+	path = headnode/lib/1bitsy-hardware-lib
+	url = https://github.com/1bitsy/1bitsy-hardware-lib.git

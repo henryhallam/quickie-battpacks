@@ -1,0 +1,24 @@
+BMS head node functions:
+- Communicate with 9 stacked LTC6804s
+- Independently measure battery current and voltage
+- Estimate state of charge
+- Balancing
+- 2x precharge outputs
+- 2x contactors
+- isoCAN to SiCtrollers and pilot interface
+- At least 2 of:
+ - Self-powered from HV
+ - Iso DC-DC from LV bus
+ - Backup battery
+- Low-discharge standby mode, target < 200 uA (10% dischg in 6 months)
+- Discrete I/O: Status LED and contactor override (open/auto/close)
+Maybe:
+- Blown fuse detection?
+- Pyrofuse
+
+Major components:
+STM32F407 microcontroller
+LTC6820 isoSPI to SPI
+ADM3053 
+VIPER0P or VIPER26
+Precharge: PMOS (at least 600V rated) + 2K pwr res

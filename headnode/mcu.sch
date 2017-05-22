@@ -1,0 +1,993 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:stm32
+LIBS:pkl_conn
+LIBS:pkl_device
+LIBS:pkl_ftdi
+LIBS:pkl_logos
+LIBS:pkl_misc
+LIBS:pkl_molex
+LIBS:pkl_power
+LIBS:pkl_sensor
+LIBS:pkl_tag_connect
+LIBS:pkl_texas
+LIBS:bms
+LIBS:bms-head-misc
+LIBS:bms-head-cache
+EELAYER 25 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 2 11
+Title "HenryBMS headnode MCU"
+Date ""
+Rev ""
+Comp ""
+Comment1 "Adapted from Piotr Esden-Tempski's 1BitSy"
+Comment2 ""
+Comment3 "License: CC-BY-SA V4.0"
+Comment4 ""
+$EndDescr
+$Comp
+L GND #PWR01
+U 1 1 5743625A
+P 2500 9575
+F 0 "#PWR01" H 2500 9325 50  0001 C CNN
+F 1 "GND" H 2500 9425 50  0000 C CNN
+F 2 "" H 2500 9575 60  0000 C CNN
+F 3 "" H 2500 9575 60  0000 C CNN
+	1    2500 9575
+	1    0    0    -1  
+$EndComp
+$Comp
+L pkl_C_Small C8
+U 1 1 5743625B
+P 1650 8175
+F 0 "C8" H 1660 8245 50  0000 L CNN
+F 1 "10p" H 1660 8095 50  0000 L CNN
+F 2 "pkl_dipol:C_0402" H 1650 8175 60  0001 C CNN
+F 3 "" H 1650 8175 60  0000 C CNN
+F 4 "cap-cer-0402-10p" H 1650 8175 60  0001 C CNN "Key"
+F 5 "0402" H 1650 8175 60  0001 C CNN "Package ID"
+F 6 "ANY" H 1650 8175 60  0001 C CNN "Source"
+	1    1650 8175
+	0    -1   -1   0   
+$EndComp
+$Comp
+L pkl_C_Small C9
+U 1 1 5743625C
+P 1650 8475
+F 0 "C9" H 1660 8545 50  0000 L CNN
+F 1 "10p" H 1660 8395 50  0000 L CNN
+F 2 "pkl_dipol:C_0402" H 1650 8475 60  0001 C CNN
+F 3 "" H 1650 8475 60  0000 C CNN
+F 4 "cap-cer-0402-10p" H 1650 8475 60  0001 C CNN "Key"
+F 5 "0402" H 1650 8475 60  0001 C CNN "Package ID"
+F 6 "ANY" H 1650 8475 60  0001 C CNN "Source"
+	1    1650 8475
+	0    -1   -1   0   
+$EndComp
+$Comp
+L +3V3 #PWR02
+U 1 1 5743625D
+P 800 8575
+F 0 "#PWR02" H 800 8425 50  0001 C CNN
+F 1 "+3V3" H 800 8715 50  0000 C CNN
+F 2 "" H 800 8575 60  0000 C CNN
+F 3 "" H 800 8575 60  0000 C CNN
+	1    800  8575
+	1    0    0    -1  
+$EndComp
+$Comp
+L pkl_L_Small L1
+U 1 1 5743625E
+P 1000 9075
+F 0 "L1" H 1030 9115 50  0000 L CNN
+F 1 "600 Ferrite" H 1030 9035 50  0000 L CNN
+F 2 "pkl_dipol:L_0402" H 1000 9075 60  0001 C CNN
+F 3 "" H 1000 9075 60  0000 C CNN
+F 4 "ferrite-0402-600" H 1000 9075 60  0001 C CNN "Key"
+F 5 "600Ohm" H 1000 9075 60  0001 C CNN "Characteristics"
+F 6 "0402" H 1000 9075 60  0001 C CNN "Package ID"
+F 7 "ANY" H 1000 9075 60  0001 C CNN "Source"
+	1    1000 9075
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 5743625F
+P 13700 9275
+F 0 "#PWR03" H 13700 9025 50  0001 C CNN
+F 1 "GND" H 13700 9125 50  0000 C CNN
+F 2 "" H 13700 9275 60  0000 C CNN
+F 3 "" H 13700 9275 60  0000 C CNN
+	1    13700 9275
+	1    0    0    -1  
+$EndComp
+$Comp
+L pkl_C_Small C14
+U 1 1 57436261
+P 2400 9275
+F 0 "C14" H 2410 9345 50  0000 L CNN
+F 1 "100n" V 2350 9325 50  0000 L CNN
+F 2 "pkl_dipol:C_0402" H 2400 9275 60  0001 C CNN
+F 3 "" H 2400 9275 60  0000 C CNN
+F 4 "cap-cer-0402-100n" H 2400 9275 60  0001 C CNN "Key"
+F 5 "0402" H 2400 9275 60  0001 C CNN "Package ID"
+F 6 "ANY" H 2400 9275 60  0001 C CNN "Source"
+	1    2400 9275
+	1    0    0    -1  
+$EndComp
+$Comp
+L pkl_C_Small C12
+U 1 1 57436262
+P 2200 9275
+F 0 "C12" H 2210 9345 50  0000 L CNN
+F 1 "100n" V 2150 9325 50  0000 L CNN
+F 2 "pkl_dipol:C_0402" H 2200 9275 60  0001 C CNN
+F 3 "" H 2200 9275 60  0000 C CNN
+F 4 "cap-cer-0402-100n" H 2200 9275 60  0001 C CNN "Key"
+F 5 "0402" H 2200 9275 60  0001 C CNN "Package ID"
+F 6 "ANY" H 2200 9275 60  0001 C CNN "Source"
+	1    2200 9275
+	1    0    0    -1  
+$EndComp
+$Comp
+L pkl_C_Small C11
+U 1 1 57436263
+P 2000 9275
+F 0 "C11" H 2010 9345 50  0000 L CNN
+F 1 "100n" V 1950 9325 50  0000 L CNN
+F 2 "pkl_dipol:C_0402" H 2000 9275 60  0001 C CNN
+F 3 "" H 2000 9275 60  0000 C CNN
+F 4 "cap-cer-0402-100n" H 2000 9275 60  0001 C CNN "Key"
+F 5 "0402" H 2000 9275 60  0001 C CNN "Package ID"
+F 6 "ANY" H 2000 9275 60  0001 C CNN "Source"
+	1    2000 9275
+	1    0    0    -1  
+$EndComp
+$Comp
+L pkl_C_Small C10
+U 1 1 57436264
+P 1800 9275
+F 0 "C10" H 1810 9345 50  0000 L CNN
+F 1 "100n" V 1750 9325 50  0000 L CNN
+F 2 "pkl_dipol:C_0402" H 1800 9275 60  0001 C CNN
+F 3 "" H 1800 9275 60  0000 C CNN
+F 4 "cap-cer-0402-100n" H 1800 9275 60  0001 C CNN "Key"
+F 5 "0402" H 1800 9275 60  0001 C CNN "Package ID"
+F 6 "ANY" H 1800 9275 60  0001 C CNN "Source"
+	1    1800 9275
+	1    0    0    -1  
+$EndComp
+$Comp
+L pkl_C_Small C4
+U 1 1 57436265
+P 1400 9275
+F 0 "C4" H 1410 9345 50  0000 L CNN
+F 1 "100n" V 1350 9325 50  0000 L CNN
+F 2 "pkl_dipol:C_0402" H 1400 9275 60  0001 C CNN
+F 3 "" H 1400 9275 60  0000 C CNN
+F 4 "cap-cer-0402-100n" H 1400 9275 60  0001 C CNN "Key"
+F 5 "0402" H 1400 9275 60  0001 C CNN "Package ID"
+F 6 "ANY" H 1400 9275 60  0001 C CNN "Source"
+	1    1400 9275
+	1    0    0    -1  
+$EndComp
+$Comp
+L pkl_C_Small C2
+U 1 1 57436266
+P 1200 9275
+F 0 "C2" H 1210 9345 50  0000 L CNN
+F 1 "1u" V 1150 9325 50  0000 L CNN
+F 2 "pkl_dipol:C_0402" H 1200 9275 60  0001 C CNN
+F 3 "" H 1200 9275 60  0000 C CNN
+F 4 "cap-cer-0402-1u" H 1200 9275 60  0001 C CNN "Key"
+F 5 "0402" H 1200 9275 60  0001 C CNN "Package ID"
+F 6 "ANY" H 1200 9275 60  0001 C CNN "Source"
+	1    1200 9275
+	1    0    0    -1  
+$EndComp
+$Comp
+L pkl_C C5
+U 1 1 57436267
+P 1600 9275
+F 0 "C5" H 1610 9345 50  0000 L CNN
+F 1 "4u7" V 1550 9325 50  0000 L CNN
+F 2 "pkl_dipol:C_0603" H 1600 9275 60  0001 C CNN
+F 3 "" H 1600 9275 60  0000 C CNN
+F 4 "cap-cer-0603-4u7" H 1600 9275 60  0001 C CNN "Key"
+F 5 "0603" H 1600 9275 60  0001 C CNN "Package ID"
+F 6 "ANY" H 1600 9275 60  0001 C CNN "Source"
+	1    1600 9275
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 57436268
+P 1800 9575
+F 0 "#PWR04" H 1800 9325 50  0001 C CNN
+F 1 "GND" H 1800 9425 50  0000 C CNN
+F 2 "" H 1800 9575 60  0000 C CNN
+F 3 "" H 1800 9575 60  0000 C CNN
+	1    1800 9575
+	1    0    0    -1  
+$EndComp
+$Comp
+L pkl_C_Small C16
+U 1 1 57436269
+P 13900 8775
+F 0 "C16" H 13910 8845 50  0000 L CNN
+F 1 "2u2" H 13910 8695 50  0000 L CNN
+F 2 "pkl_dipol:C_0402" H 13900 8775 60  0001 C CNN
+F 3 "" H 13900 8775 60  0000 C CNN
+F 4 "cap-cer-0402-2u2" H 13900 8775 60  0001 C CNN "Key"
+F 5 "0402" H 13900 8775 60  0001 C CNN "Package ID"
+F 6 "ANY" H 13900 8775 60  0001 C CNN "Source"
+	1    13900 8775
+	1    0    0    -1  
+$EndComp
+$Comp
+L pkl_C_Small C17
+U 1 1 5743626A
+P 14100 8775
+F 0 "C17" H 14110 8845 50  0000 L CNN
+F 1 "2u2" H 14110 8695 50  0000 L CNN
+F 2 "pkl_dipol:C_0402" H 14100 8775 60  0001 C CNN
+F 3 "" H 14100 8775 60  0000 C CNN
+F 4 "cap-cer-0402-2u2" H 14100 8775 60  0001 C CNN "Key"
+F 5 "0402" H 14100 8775 60  0001 C CNN "Package ID"
+F 6 "ANY" H 14100 8775 60  0001 C CNN "Source"
+	1    14100 8775
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 5743626B
+P 14000 9275
+F 0 "#PWR05" H 14000 9025 50  0001 C CNN
+F 1 "GND" H 14000 9125 50  0000 C CNN
+F 2 "" H 14000 9275 60  0000 C CNN
+F 3 "" H 14000 9275 60  0000 C CNN
+	1    14000 9275
+	1    0    0    -1  
+$EndComp
+$Comp
+L pkl_C_Small C18
+U 1 1 5743626C
+P 14550 8775
+F 0 "C18" H 14560 8845 50  0000 L CNN
+F 1 "100n" H 14560 8695 50  0000 L CNN
+F 2 "pkl_dipol:C_0402" H 14550 8775 60  0001 C CNN
+F 3 "" H 14550 8775 60  0000 C CNN
+F 4 "cap-cer-0402-100n" H 14550 8775 60  0001 C CNN "Key"
+F 5 "0402" H 14550 8775 60  0001 C CNN "Package ID"
+F 6 "ANY" H 14550 8775 60  0001 C CNN "Source"
+	1    14550 8775
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 5743626D
+P 14550 9275
+F 0 "#PWR06" H 14550 9025 50  0001 C CNN
+F 1 "GND" H 14550 9125 50  0000 C CNN
+F 2 "" H 14550 9275 60  0000 C CNN
+F 3 "" H 14550 9275 60  0000 C CNN
+	1    14550 9275
+	1    0    0    -1  
+$EndComp
+Text Label 14650 8175 0    60   ~ 0
+JTAG_RST
+$Comp
+L GND #PWR07
+U 1 1 5743626F
+P 14300 9275
+F 0 "#PWR07" H 14300 9025 50  0001 C CNN
+F 1 "GND" H 14300 9125 50  0000 C CNN
+F 2 "" H 14300 9275 60  0000 C CNN
+F 3 "" H 14300 9275 60  0000 C CNN
+	1    14300 9275
+	1    0    0    -1  
+$EndComp
+Text Label 2150 8175 2    60   ~ 0
+OSC_IN
+Text Label 2150 8475 2    60   ~ 0
+OSC_OUT
+Text Label 2400 5975 2    60   ~ 0
+JTAG_TMS
+Text Label 2400 6075 2    60   ~ 0
+JTAG_TCK
+Text Label 13800 4975 0    60   ~ 0
+JTAG_TDO
+$Comp
+L JTAG-10 X3
+U 1 1 5743628A
+P 3800 3975
+F 0 "X3" H 3800 4275 60  0000 C CNN
+F 1 "JTAG-10" H 3800 3675 60  0000 C CNN
+F 2 "pkl_samtec:FTSH-105-XX-X-DV" H 3800 3975 60  0001 C CNN
+F 3 "" H 3800 3975 60  0000 C CNN
+F 4 "conn-smd-0.05in-5-2" H 3800 3975 60  0001 C CNN "Key"
+F 5 "FTSH-105-01-F-DV-K" H 3800 3975 60  0001 C CNN "MFN"
+F 6 "ANY" H 3800 3975 60  0001 C CNN "Source"
+F 7 "DNP" H 3800 3975 60  0001 C CNN "DNP"
+	1    3800 3975
+	1    0    0    -1  
+$EndComp
+Text Label 4300 3775 0    60   ~ 0
+JTAG_TMS
+Text Label 4300 3875 0    60   ~ 0
+JTAG_TCK
+Text Label 4300 3975 0    60   ~ 0
+JTAG_TDO
+Text Label 4300 4175 0    60   ~ 0
+JTAG_RST
+Text Notes 4750 3775 0    60   ~ 0
+SWDIO
+Text Notes 4750 3875 0    60   ~ 0
+SWCLK
+Text Notes 4750 3975 0    60   ~ 0
+TRACESWO
+Text Notes 4750 4175 0    60   ~ 0
+~RST
+$Comp
+L GND #PWR011
+U 1 1 5743628B
+P 3300 4275
+F 0 "#PWR011" H 3300 4025 50  0001 C CNN
+F 1 "GND" H 3300 4125 50  0000 C CNN
+F 2 "" H 3300 4275 60  0000 C CNN
+F 3 "" H 3300 4275 60  0000 C CNN
+	1    3300 4275
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR012
+U 1 1 5743628C
+P 3300 3675
+F 0 "#PWR012" H 3300 3525 50  0001 C CNN
+F 1 "+3V3" H 3300 3815 50  0000 C CNN
+F 2 "" H 3300 3675 60  0000 C CNN
+F 3 "" H 3300 3675 60  0000 C CNN
+	1    3300 3675
+	1    0    0    -1  
+$EndComp
+Text Notes 3200 3875 2    60   ~ 0
+GND
+Text Notes 3200 3975 2    60   ~ 0
+GND
+Text Notes 3200 4075 2    60   ~ 0
+KEY
+Text Notes 3200 4175 2    60   ~ 0
+GNDDetect
+Text Notes 3200 3775 2    60   ~ 0
+VTref
+Text Notes 3500 3575 0    60   ~ 0
+ARM Cortex JTAG\nConnector
+$Comp
+L pkl_Led_Small LED1
+U 1 1 574362A6
+P 9750 1950
+F 0 "LED1" H 9800 1850 50  0000 L CNN
+F 1 "ORA" H 9575 1850 50  0000 L CNN
+F 2 "pkl_dipol:D_0603" V 9750 1950 60  0001 C CNN
+F 3 "" V 9750 1950 60  0000 C CNN
+F 4 "led-0603-ora" H 9750 1950 60  0001 C CNN "Key"
+F 5 "0603" H 9750 1950 60  0001 C CNN "Package ID"
+F 6 "ANY" H 9750 1950 60  0001 C CNN "Source"
+	1    9750 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L +3V3 #PWR015
+U 1 1 574362A9
+P 9750 1250
+F 0 "#PWR015" H 9750 1100 50  0001 C CNN
+F 1 "+3V3" H 9750 1390 50  0000 C CNN
+F 2 "" H 9750 1250 60  0000 C CNN
+F 3 "" H 9750 1250 60  0000 C CNN
+	1    9750 1250
+	1    0    0    -1  
+$EndComp
+Text Label 9750 2150 3    60   ~ 0
+PA8
+Text Notes 9300 900  0    120  ~ 0
+STATUS LED
+$Comp
+L PWR_FLAG #FLG016
+U 1 1 574362B9
+P 1200 8625
+F 0 "#FLG016" H 1200 8720 50  0001 C CNN
+F 1 "PWR_FLAG" H 1200 8805 50  0000 C CNN
+F 2 "" H 1200 8625 60  0000 C CNN
+F 3 "" H 1200 8625 60  0000 C CNN
+	1    1200 8625
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG017
+U 1 1 574362BA
+P 13900 7675
+F 0 "#FLG017" H 13900 7770 50  0001 C CNN
+F 1 "PWR_FLAG" H 13900 7855 50  0000 C CNN
+F 2 "" H 13900 7675 60  0000 C CNN
+F 3 "" H 13900 7675 60  0000 C CNN
+	1    13900 7675
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG018
+U 1 1 574362BB
+P 14100 7475
+F 0 "#FLG018" H 14100 7570 50  0001 C CNN
+F 1 "PWR_FLAG" H 14100 7655 50  0000 C CNN
+F 2 "" H 14100 7475 60  0000 C CNN
+F 3 "" H 14100 7475 60  0000 C CNN
+	1    14100 7475
+	1    0    0    -1  
+$EndComp
+$Comp
+L pkl_R_Small R4
+U 1 1 574362BF
+P 9750 1450
+F 0 "R4" H 9780 1470 50  0000 L CNN
+F 1 "300" H 9780 1410 50  0000 L CNN
+F 2 "pkl_dipol:R_0402" H 9750 1450 60  0001 C CNN
+F 3 "" H 9750 1450 60  0000 C CNN
+F 4 "res-0402-300" H 9750 1450 60  0001 C CNN "Key"
+F 5 "0402" H 9750 1450 60  0001 C CNN "Package ID"
+F 6 "ANY" H 9750 1450 60  0001 C CNN "Source"
+	1    9750 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 8225 2400 8175
+Wire Wire Line
+	1750 8175 2500 8175
+Wire Wire Line
+	2500 8175 2500 8075
+Wire Wire Line
+	2500 8075 2600 8075
+Wire Wire Line
+	2600 8175 2600 8175
+Wire Wire Line
+	1450 8575 2550 8575
+Wire Wire Line
+	2500 8575 2500 9575
+Wire Wire Line
+	2300 8325 2200 8325
+Wire Wire Line
+	2200 8325 2200 8575
+Connection ~ 2500 8575
+Connection ~ 2400 8175
+Wire Wire Line
+	1450 8175 1550 8175
+Connection ~ 2200 8575
+Wire Wire Line
+	1450 8475 1550 8475
+Connection ~ 1450 8475
+Wire Wire Line
+	800  8675 2600 8675
+Wire Wire Line
+	800  8575 800  9075
+Wire Wire Line
+	800  8775 2600 8775
+Connection ~ 800  8775
+Wire Wire Line
+	800  8875 2600 8875
+Connection ~ 800  8875
+Wire Wire Line
+	800  8975 2600 8975
+Connection ~ 800  8675
+Wire Wire Line
+	800  9075 900  9075
+Connection ~ 800  8975
+Wire Wire Line
+	1100 9075 2600 9075
+Wire Wire Line
+	13600 8675 13700 8675
+Wire Wire Line
+	13700 8675 13700 9275
+Wire Wire Line
+	13600 8775 13700 8775
+Connection ~ 13700 8775
+Wire Wire Line
+	13600 8875 13700 8875
+Connection ~ 13700 8875
+Wire Wire Line
+	13600 8275 15050 8275
+Wire Wire Line
+	1200 8625 1200 9175
+Connection ~ 1200 9075
+Wire Wire Line
+	1400 9175 1400 9075
+Connection ~ 1400 9075
+Wire Wire Line
+	1200 9375 1200 9475
+Wire Wire Line
+	1200 9475 2400 9475
+Wire Wire Line
+	2400 9475 2400 9375
+Wire Wire Line
+	2200 9375 2200 9475
+Connection ~ 2200 9475
+Wire Wire Line
+	2000 9375 2000 9475
+Connection ~ 2000 9475
+Wire Wire Line
+	1800 9375 1800 9575
+Connection ~ 1800 9475
+Wire Wire Line
+	1600 9375 1600 9475
+Connection ~ 1600 9475
+Wire Wire Line
+	1400 9375 1400 9475
+Connection ~ 1400 9475
+Wire Wire Line
+	13600 8375 14100 8375
+Wire Wire Line
+	14100 7475 14100 8675
+Wire Wire Line
+	13600 8475 13900 8475
+Wire Wire Line
+	13900 7675 13900 8675
+Wire Wire Line
+	13900 8875 13900 8975
+Wire Wire Line
+	13900 8975 14100 8975
+Wire Wire Line
+	14100 8975 14100 8875
+Wire Wire Line
+	14000 8975 14000 9275
+Connection ~ 14000 8975
+Wire Wire Line
+	1600 9175 1600 8675
+Connection ~ 1600 8675
+Wire Wire Line
+	1800 9175 1800 8675
+Connection ~ 1800 8675
+Wire Wire Line
+	2000 9175 2000 8775
+Connection ~ 2000 8775
+Wire Wire Line
+	2200 9175 2200 8875
+Connection ~ 2200 8875
+Wire Wire Line
+	2400 9175 2400 8975
+Connection ~ 2400 8975
+Wire Wire Line
+	13600 8175 14650 8175
+Wire Wire Line
+	14550 8175 14550 8675
+Wire Wire Line
+	14550 8875 14550 9275
+Connection ~ 14550 8175
+Wire Wire Line
+	13600 8075 14300 8075
+Wire Wire Line
+	14300 8075 14300 9275
+Wire Wire Line
+	2600 5975 2400 5975
+Wire Wire Line
+	2600 6075 2400 6075
+Wire Wire Line
+	13600 4975 13800 4975
+Wire Wire Line
+	4200 4175 4300 4175
+Wire Wire Line
+	4200 3975 4300 3975
+Wire Wire Line
+	4200 3875 4300 3875
+Wire Wire Line
+	4200 3775 4300 3775
+Wire Wire Line
+	3400 3775 3300 3775
+Wire Wire Line
+	3300 3775 3300 3675
+Wire Wire Line
+	3400 3875 3300 3875
+Wire Wire Line
+	3300 3875 3300 4275
+Wire Wire Line
+	3400 3975 3300 3975
+Connection ~ 3300 3975
+Wire Wire Line
+	3400 4075 3300 4075
+Connection ~ 3300 4075
+Wire Wire Line
+	3400 4175 3300 4175
+Connection ~ 3300 4175
+Wire Wire Line
+	9750 2050 9750 2150
+Wire Notes Line
+	2700 4475 2700 3375
+Wire Notes Line
+	2700 3375 5650 3375
+Wire Notes Line
+	5650 3375 5650 4475
+Wire Notes Line
+	5650 4475 2700 4475
+Wire Notes Line
+	9250 650  10450 650 
+Wire Notes Line
+	10450 650  10450 2550
+Wire Notes Line
+	10450 2550 9250 2550
+Wire Notes Line
+	9250 2550 9250 650 
+Connection ~ 13900 8475
+Connection ~ 14100 8375
+Wire Wire Line
+	9750 1250 9750 1350
+Wire Wire Line
+	9750 1550 9750 1850
+$Comp
+L pkl_C C1
+U 1 1 574438EA
+P 1500 1450
+F 0 "C1" H 1525 1550 50  0000 L CNN
+F 1 "4u7" H 1525 1350 50  0000 L CNN
+F 2 "pkl_dipol:C_0603" H 1538 1300 30  0001 C CNN
+F 3 "" H 1500 1450 60  0000 C CNN
+F 4 "cap-cer-0603-4u7" H 1500 1450 60  0001 C CNN "Key"
+F 5 "0603" H 1500 1450 60  0001 C CNN "Package ID"
+F 6 "ANY" H 1500 1450 60  0001 C CNN "Source"
+	1    1500 1450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L pkl_VREG_5PIN_FIXED U1
+U 1 1 574438EB
+P 2300 1250
+F 0 "U1" H 2150 1050 60  0000 C CNN
+F 1 "VREG_3V3" H 2300 1450 60  0000 C CNN
+F 2 "pkl_housings_sot:SOT-23-5" H 2300 1250 60  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lp2992.pdf" H 2300 1250 60  0001 C CNN
+F 4 "vreg-sot23-5-3v3" H 2300 1250 60  0001 C CNN "Key"
+F 5 "LP2992AIM5-3.3/NOPB" H 2300 1250 60  0001 C CNN "MFN"
+F 6 "sot23-5" H 2300 1250 60  0001 C CNN "Package ID"
+F 7 "ANY" H 2300 1250 60  0001 C CNN "Source"
+	1    2300 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L pkl_C C13
+U 1 1 574438EC
+P 2900 1450
+F 0 "C13" H 2925 1550 50  0000 L CNN
+F 1 "4u7" H 2925 1350 50  0000 L CNN
+F 2 "pkl_dipol:C_0603" H 2938 1300 30  0001 C CNN
+F 3 "" H 2900 1450 60  0000 C CNN
+F 4 "cap-cer-0603-4u7" H 2900 1450 60  0001 C CNN "Key"
+F 5 "0603" H 2900 1450 60  0001 C CNN "Package ID"
+F 6 "ANY" H 2900 1450 60  0001 C CNN "Source"
+	1    2900 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR019
+U 1 1 574438ED
+P 2300 1750
+F 0 "#PWR019" H 2300 1500 50  0001 C CNN
+F 1 "GND" H 2300 1600 50  0000 C CNN
+F 2 "" H 2300 1750 60  0000 C CNN
+F 3 "" H 2300 1750 60  0000 C CNN
+	1    2300 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L pkl_C_Small C3
+U 1 1 574438EE
+P 1800 1450
+F 0 "C3" H 1810 1520 50  0000 L CNN
+F 1 "470p" H 1810 1370 50  0000 L CNN
+F 2 "pkl_dipol:C_0402" H 1800 1450 60  0001 C CNN
+F 3 "" H 1800 1450 60  0000 C CNN
+F 4 "cap-cer-0402-470p" H 1800 1450 60  0001 C CNN "Key"
+F 5 "0402" H 1800 1450 60  0001 C CNN "Package ID"
+F 6 "ANY" H 1800 1450 60  0001 C CNN "Source"
+	1    1800 1450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR020
+U 1 1 574438EF
+P 2700 1050
+F 0 "#PWR020" H 2700 900 50  0001 C CNN
+F 1 "+3V3" H 2700 1190 50  0000 C CNN
+F 2 "" H 2700 1050 60  0000 C CNN
+F 3 "" H 2700 1050 60  0000 C CNN
+	1    2700 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG021
+U 1 1 574438F1
+P 1500 1050
+F 0 "#FLG021" H 1500 1145 50  0001 C CNN
+F 1 "PWR_FLAG" H 1500 1230 50  0000 C CNN
+F 2 "" H 1500 1050 60  0000 C CNN
+F 3 "" H 1500 1050 60  0000 C CNN
+	1    1500 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 1150 2000 1150
+Wire Wire Line
+	1900 1150 1900 1350
+Wire Wire Line
+	1900 1350 2000 1350
+Connection ~ 1900 1150
+Wire Wire Line
+	2600 1350 2700 1350
+Wire Wire Line
+	2700 1350 2700 1650
+Wire Wire Line
+	1500 1650 2900 1650
+Wire Wire Line
+	2300 1650 2300 1750
+Wire Wire Line
+	1500 1650 1500 1550
+Connection ~ 2300 1650
+Wire Wire Line
+	2000 1250 1800 1250
+Wire Wire Line
+	1800 1250 1800 1350
+Wire Wire Line
+	1800 1550 1800 1650
+Connection ~ 1800 1650
+Wire Wire Line
+	1500 1050 1500 1350
+Wire Wire Line
+	2600 1150 2900 1150
+Wire Wire Line
+	2900 1150 2900 1350
+Wire Wire Line
+	2900 1650 2900 1550
+Connection ~ 2700 1650
+Wire Wire Line
+	2700 1050 2700 1150
+Connection ~ 2700 1150
+Connection ~ 1500 1150
+$Comp
+L STM32F415RGTx U2
+U 1 1 57436258
+P 8100 6875
+F 0 "U2" H 8100 6975 50  0000 C CNN
+F 1 "STM32F415RGT" H 8100 6775 50  0000 C CNN
+F 2 "pkl_housings_qfp:LQFP-64_10x10mm_Pitch0.5mm" H 8100 6675 50  0001 C CIN
+F 3 "" H 8100 6875 50  0000 C CNN
+F 4 "ic-mcu-stm32f415rgt6" H 8100 6875 60  0001 C CNN "Key"
+F 5 "STM32F415RGT6" H 8100 6875 60  0001 C CNN "MFN"
+F 6 "LQFP-64" H 8100 6875 60  0001 C CNN "Package ID"
+F 7 "ANY" H 8100 6875 60  0001 C CNN "Source"
+	1    8100 6875
+	1    0    0    -1  
+$EndComp
+$Comp
+L pkl_XTAL_XGXG X2
+U 1 1 57436259
+P 2400 8325
+F 0 "X2" V 2450 8025 50  0000 C CNN
+F 1 "25MHz" V 2350 7875 50  0000 L CNN
+F 2 "pkl_misc:ABM8" H 2400 8325 60  0001 C CNN
+F 3 "" H 2400 8325 60  0000 C CNN
+F 4 "xtal-abm8-25mhz" H 2400 8325 60  0001 C CNN "Key"
+F 5 "ABM8G-24.000MHZ-B4Y-T" H 2400 8325 60  0001 C CNN "MFN"
+F 6 "ANY" H 2400 8325 60  0001 C CNN "Source"
+	1    2400 8325
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2600 8475 2600 8175
+Wire Wire Line
+	1750 8475 2600 8475
+Wire Wire Line
+	2400 8425 2400 8475
+Connection ~ 2400 8475
+Wire Wire Line
+	2500 8325 2550 8325
+Wire Wire Line
+	2550 8325 2550 8575
+Text Label 1750 1150 2    60   ~ 0
+VIN
+$Comp
+L CONN_01X01 P41
+U 1 1 5748209F
+P 800 1450
+F 0 "P41" H 850 1450 50  0000 L CNN
+F 1 "CONN_01X01" V 900 1450 50  0001 C CNN
+F 2 "pkl_pin_headers:Pin_Header_Straight_Round_1x01" H 800 1450 50  0001 C CNN
+F 3 "" H 800 1450 50  0000 C CNN
+F 4 "ANY" H 800 1450 60  0001 C CNN "Source"
+	1    800  1450
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 P40
+U 1 1 574837C9
+P 800 1350
+F 0 "P40" H 850 1350 50  0000 L CNN
+F 1 "CONN_01X01" V 900 1350 50  0001 C CNN
+F 2 "pkl_pin_headers:Pin_Header_Straight_Round_1x01" H 800 1350 50  0001 C CNN
+F 3 "" H 800 1350 50  0000 C CNN
+F 4 "ANY" H 800 1350 60  0001 C CNN "Source"
+	1    800  1350
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR022
+U 1 1 574838B5
+P 1100 1650
+F 0 "#PWR022" H 1100 1400 50  0001 C CNN
+F 1 "GND" H 1100 1500 50  0000 C CNN
+F 2 "" H 1100 1650 60  0000 C CNN
+F 3 "" H 1100 1650 60  0000 C CNN
+	1    1100 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 1450 1100 1450
+Wire Wire Line
+	1100 1450 1100 1650
+Wire Wire Line
+	1000 1350 1100 1350
+Text Label 1100 1350 0    60   ~ 0
+VIN
+Text Notes 650  800  0    120  ~ 0
+POWER
+Wire Notes Line
+	550  2000 4050 2000
+Wire Notes Line
+	4050 2000 4050 550 
+Wire Notes Line
+	4050 550  550  550 
+Wire Notes Line
+	550  550  550  2000
+$Comp
+L CONN_01X01 P42
+U 1 1 5751C39C
+P 800 1250
+F 0 "P42" H 850 1250 50  0000 L CNN
+F 1 "CONN_01X01" V 900 1250 50  0001 C CNN
+F 2 "pkl_pin_headers:Pin_Header_Straight_Round_1x01" H 800 1250 50  0001 C CNN
+F 3 "" H 800 1250 50  0000 C CNN
+F 4 "ANY" H 800 1250 60  0001 C CNN "Source"
+	1    800  1250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1100 1250 1000 1250
+Wire Wire Line
+	1100 1050 1100 1250
+$Comp
+L +3V3 #PWR023
+U 1 1 5751C607
+P 1100 1050
+F 0 "#PWR023" H 1100 900 50  0001 C CNN
+F 1 "+3V3" H 1100 1190 50  0000 C CNN
+F 2 "" H 1100 1050 60  0000 C CNN
+F 3 "" H 1100 1050 60  0000 C CNN
+	1    1100 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P53
+U 1 1 57780723
+P 15250 8275
+F 0 "P53" H 15300 8275 50  0000 L CNN
+F 1 "CONN_01X01" V 15350 8275 50  0001 C CNN
+F 2 "pkl_pin_headers:Pin_Header_Straight_Round_1x01" H 15250 8275 50  0001 C CNN
+F 3 "" H 15250 8275 50  0000 C CNN
+F 4 "ANY" H 15250 8275 60  0001 C CNN "Source"
+	1    15250 8275
+	1    0    0    -1  
+$EndComp
+Text Label 14750 8275 0    60   ~ 0
+VBAT
+$Comp
+L CONN_01X01 P55
+U 1 1 57872F20
+P 800 1550
+F 0 "P55" H 850 1550 50  0000 L CNN
+F 1 "CONN_01X01" V 900 1550 50  0001 C CNN
+F 2 "pkl_pin_headers:Pin_Header_Straight_Round_1x01" H 800 1550 50  0001 C CNN
+F 3 "" H 800 1550 50  0000 C CNN
+F 4 "ANY" H 800 1550 60  0001 C CNN "Source"
+	1    800  1550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1100 1550 1000 1550
+Connection ~ 1100 1550
+$Comp
+L CONN_01X01 P54
+U 1 1 578733AB
+P 800 1150
+F 0 "P54" H 850 1150 50  0000 L CNN
+F 1 "CONN_01X01" V 900 1150 50  0001 C CNN
+F 2 "pkl_pin_headers:Pin_Header_Straight_Round_1x01" H 800 1150 50  0001 C CNN
+F 3 "" H 800 1150 50  0000 C CNN
+F 4 "ANY" H 800 1150 60  0001 C CNN "Source"
+	1    800  1150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1000 1150 1100 1150
+Connection ~ 1100 1150
+Wire Wire Line
+	1450 8175 1450 8575
+Text HLabel 5425 850  0    60   Input ~ 0
+VDIV_PREFUSE_1
+Text HLabel 5425 950  0    60   Input ~ 0
+VDIV_PREFUSE_2
+Text HLabel 5425 1050 0    60   Input ~ 0
+VDIV_PREFUSE_3
+Text HLabel 5425 1150 0    60   Input ~ 0
+VDIV_PREFUSE_4
+Text HLabel 5425 1250 0    60   Input ~ 0
+VDIV_BAT
+Text HLabel 5425 1350 0    60   Input ~ 0
+VDIV_LOAD1
+Text HLabel 5425 1450 0    60   Input ~ 0
+VDIV_LOAD2
+Text HLabel 5425 1600 0    60   Input ~ 0
+I_BAT
+Text HLabel 5425 1700 0    60   Input ~ 0
+I_LOAD1
+Text HLabel 5425 1800 0    60   Input ~ 0
+I_LOAD2
+Text HLabel 7375 950  2    60   Output ~ 0
+MOSI
+Text HLabel 7375 1050 2    60   Input ~ 0
+MISO
+Text HLabel 7375 1250 2    60   Output ~ 0
+~CS
+Text HLabel 7375 1150 2    60   Output ~ 0
+SCLK
+Text HLabel 7375 1400 2    60   Output ~ 0
+CAN_TX
+Text HLabel 7375 1500 2    60   Input ~ 0
+CAN_RX
+Text HLabel 7375 1700 2    60   Output ~ 0
+PRECHG1_EN
+Text HLabel 7375 1800 2    60   Output ~ 0
+PRECHG2_EN
+Text HLabel 7375 1950 2    60   Output ~ 0
+CONTACTOR1_EN
+Text HLabel 7375 2050 2    60   Output ~ 0
+CONTACTOR2_EN
+Text HLabel 7375 2275 2    60   Output ~ 0
+PANEL_LED_R~G
+Text HLabel 7375 2375 2    60   Output ~ 0
+PANEL_LED_G~R
+$EndSCHEMATC
