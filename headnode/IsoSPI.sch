@@ -41,6 +41,7 @@ LIBS:pkl_tag_connect
 LIBS:pkl_texas
 LIBS:bms
 LIBS:bms-head-misc
+LIBS:sictroller
 LIBS:bms-head-cache
 EELAYER 25 0
 EELAYER END

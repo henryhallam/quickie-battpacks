@@ -41,6 +41,7 @@ LIBS:pkl_tag_connect
 LIBS:pkl_texas
 LIBS:bms
 LIBS:bms-head-misc
+LIBS:sictroller
 LIBS:bms-head-cache
 EELAYER 25 0
 EELAYER END
@@ -990,4 +991,8 @@ Text HLabel 7375 2275 2    60   Output ~ 0
 PANEL_LED_R~G
 Text HLabel 7375 2375 2    60   Output ~ 0
 PANEL_LED_G~R
+Text HLabel 7375 2625 2    60   Output ~ 0
+12V_EN
+Text HLabel 7375 2775 2    60   Output ~ 0
+5V_SNOOZE
 $EndSCHEMATC

@@ -1,5 +1,23 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP CC3-xxxxDF-E
+D Isolated DC-DC converter module
+K DC-DC PSU SMPS
+F http://us.tdk-lambda.com/ftp/specs/CC3-xF-E_spc_en.pdf
+$ENDCMP
+#
+$CMP LT1763-3.3
+D 500mA, Low Noise, LDO Micropower Regulator, SO-8 package
+K REGULATOR POSITIVE POWER LDO NOISE
+F http://cds.linear.com/docs/en/datasheet/1763fh.pdf
+$ENDCMP
+#
+$CMP R-78AAxx-0.5SMD
+D Non-isolated 0.5A buck converter module
+K DC-DC buck SMPS power
+F https://www.recom-power.com/pdf/Innoline/R-78AAxx-0.5SMD.pdf
+$ENDCMP
+#
 $CMP Relay-SPNO
 D Relay with SP-NO contacts
 K relay

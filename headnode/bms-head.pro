@@ -1,4 +1,4 @@
-update=Sat 25 Feb 2017 06:40:24 PM PST
+update=Sat 27 May 2017 06:23:25 PM PDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -71,3 +71,4 @@ LibName39=lib/pkl/pkl_tag_connect
 LibName40=lib/pkl/pkl_texas
 LibName41=/home/henry/battpacks/bms/bms
 LibName42=lib/bms-head-misc
+LibName43=lib/sictroller

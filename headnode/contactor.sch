@@ -41,6 +41,7 @@ LIBS:pkl_tag_connect
 LIBS:pkl_texas
 LIBS:bms
 LIBS:bms-head-misc
+LIBS:sictroller
 LIBS:bms-head-cache
 EELAYER 25 0
 EELAYER END
@@ -178,4 +179,6 @@ Wire Wire Line
 Wire Wire Line
 	5550 2275 5950 2275
 Connection ~ 5950 2275
+Text Notes 625  825  0    60   ~ 0
+TODO: Add inductor and freewheel diode (still need one directly across coil to protect panel switch)
 $EndSCHEMATC

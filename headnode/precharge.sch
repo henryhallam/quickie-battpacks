@@ -41,12 +41,13 @@ LIBS:pkl_tag_connect
 LIBS:pkl_texas
 LIBS:bms
 LIBS:bms-head-misc
+LIBS:sictroller
 LIBS:bms-head-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 11
+Sheet 3 11
 Title ""
 Date ""
 Rev ""
@@ -152,8 +153,8 @@ P 4575 4850
 AR Path="/58AB7240/58B2C723" Ref="Q?"  Part="1" 
 AR Path="/58AC7517/58B2C723" Ref="Q?"  Part="1" 
 F 0 "Q?" H 4775 4925 50  0000 L CNN
-F 1 "BC817-40" H 4775 4850 50  0000 L CNN
-F 2 "SOT-23" H 4775 4775 50  0000 L CIN
+F 1 "BC817-40W" H 4775 4850 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-323" H 4775 4775 50  0000 L CIN
 F 3 "" H 4575 4850 50  0000 L CNN
 	1    4575 4850
 	1    0    0    -1  

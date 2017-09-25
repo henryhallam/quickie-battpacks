@@ -41,6 +41,7 @@ LIBS:pkl_tag_connect
 LIBS:pkl_texas
 LIBS:bms
 LIBS:bms-head-misc
+LIBS:sictroller
 LIBS:bms-head-cache
 EELAYER 25 0
 EELAYER END
@@ -62,4 +63,6 @@ Text HLabel 7625 2975 2    60   Output ~ 0
 I_LOAD1
 Text HLabel 7625 3075 2    60   Output ~ 0
 I_LOAD2
+Text Notes 6025 2025 2    60   ~ 0
+Battery: S25P050D15X 50A 0.5% closed-loop Hall\nI_load1 & 2: AMPLOC. Why do we need them, FDIR?
 $EndSCHEMATC

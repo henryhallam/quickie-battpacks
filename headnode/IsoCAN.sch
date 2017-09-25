@@ -41,6 +41,7 @@ LIBS:pkl_tag_connect
 LIBS:pkl_texas
 LIBS:bms
 LIBS:bms-head-misc
+LIBS:sictroller
 LIBS:bms-head-cache
 EELAYER 25 0
 EELAYER END
@@ -224,110 +225,66 @@ F 3 "" H 4650 2850 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	2650 1850 2950 1850
+	2650 1850 3550 1850
 Wire Wire Line
-	2950 1850 3150 1850
-Wire Wire Line
-	3150 1850 3550 1850
-Wire Wire Line
-	3550 2450 3550 2550
-Wire Wire Line
-	3550 2550 3550 2650
-Wire Wire Line
-	3550 2650 3550 2750
-Wire Wire Line
-	3550 2750 3550 2850
-Wire Wire Line
-	3550 2850 3550 2950
+	3550 2450 3550 2950
 Connection ~ 3550 2850
 Connection ~ 3550 2750
 Connection ~ 3550 2650
 Connection ~ 3550 2550
 Wire Wire Line
-	4550 1350 4550 1650
-Wire Wire Line
-	4550 1650 4550 1750
+	4550 1350 4550 1750
 Wire Wire Line
 	4650 2550 4550 2550
 Wire Wire Line
-	4550 2550 4550 2650
-Wire Wire Line
-	4550 2650 4550 2750
-Wire Wire Line
-	4550 2750 4550 2850
+	4550 2550 4550 2850
 Connection ~ 4550 2650
 Connection ~ 4550 2750
 Wire Wire Line
 	4550 2350 4650 2350
 Wire Wire Line
-	4550 2150 4850 2150
+	4550 2150 5000 2150
 Wire Wire Line
-	4850 2150 5000 2150
+	4550 2250 5000 2250
 Wire Wire Line
-	4550 2250 4750 2250
+	4550 2850 5425 2850
 Wire Wire Line
-	4750 2250 5000 2250
-Wire Wire Line
-	4550 2850 4650 2850
-Wire Wire Line
-	4650 2850 5350 2850
-Wire Wire Line
-	5350 2850 5425 2850
-Wire Wire Line
-	2650 2050 2800 2050
-Wire Wire Line
-	2800 2050 2950 2050
+	2650 2050 2950 2050
 Connection ~ 2800 2050
 Connection ~ 2950 1850
 Connection ~ 3150 1850
 Wire Wire Line
-	2650 1600 2850 1600
-Wire Wire Line
-	2850 1600 3000 1600
+	2650 1600 3000 1600
 Connection ~ 2850 1600
 Wire Wire Line
-	2650 1400 3000 1400
-Wire Wire Line
-	3000 1400 3250 1400
+	2650 1400 3250 1400
 Connection ~ 3000 1400
 Wire Wire Line
 	3250 1400 3250 1650
 Wire Wire Line
 	3250 1650 3550 1650
 Wire Wire Line
-	4900 1550 5100 1550
-Wire Wire Line
-	5100 1550 5250 1550
+	4900 1550 5250 1550
 Connection ~ 5100 1550
 Connection ~ 5250 1350
 Wire Wire Line
-	4550 1350 4900 1350
-Wire Wire Line
-	4900 1350 5250 1350
+	4550 1350 5250 1350
 Connection ~ 4550 1650
 Connection ~ 4900 1350
 Wire Wire Line
-	5350 1600 5350 1950
-Wire Wire Line
-	5350 1950 5350 2850
+	5350 1600 5350 2850
 Wire Wire Line
 	5350 1600 5100 1600
 Wire Wire Line
 	5100 1600 5100 1550
 Wire Wire Line
-	4750 1950 4900 1950
-Wire Wire Line
-	4900 1950 5050 1950
-Wire Wire Line
-	5050 1950 5350 1950
+	4750 1950 5350 1950
 Connection ~ 4900 1950
 Connection ~ 5050 1750
 Connection ~ 5350 1950
 Connection ~ 5050 1950
 Wire Wire Line
-	4550 1750 4750 1750
-Wire Wire Line
-	4750 1750 5050 1750
+	4550 1750 5050 1750
 Connection ~ 4750 1750
 Wire Wire Line
 	4750 2050 4850 2050
